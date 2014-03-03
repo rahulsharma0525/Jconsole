@@ -1,0 +1,14 @@
+<project   basedir="."  default="compile">
+  
+  <property name="src" value="src"/>
+  <property name="build" value="build"/>
+  <property name="dist"  value="docs/javadoc"/>
+
+  <target name="compile" >
+    <javadoc packagenames="com.*" sourcepath="${src}" destdir="${dist}" author="true" version="true" windowtitle="Roots API">
+	    
+    </javadoc>
+  </target>
+</project>
+
+
